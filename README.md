@@ -9,8 +9,4 @@
 
 ## Laravel-app
 
-<<<<<<< HEAD
 Test laravel-app
-=======
-
->>>>>>> 9a530b5b2f57cd99a6d4c95089cd56eafd7ba508
