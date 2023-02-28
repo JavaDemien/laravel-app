@@ -4,6 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class ArticleFactory extends Factory
 {
@@ -19,9 +20,10 @@ class ArticleFactory extends Factory
         return [
             'title'         => $title,
             'body'          => $this->faker->paragraph(100, true),
-            'img'           => 'https://via.placeholder.com/600/5F1138/FFFFFF/?text=LARAVEL:8.*',
+            'img'           => 'https://via.placeholder.com/600/5F1138/FFFFFF/?text=Люблю Людочку <3',
             'slug'          => $slug,
-            'created_at'    => $this->faker->dateTimeBetween('-1 years')
+            'created_at'    => $this->faker->dateTimeBetween('-1 years'),
+            'published_at'  => Carbon::now() 
         ];
     }
 }
